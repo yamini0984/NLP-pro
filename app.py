@@ -34,7 +34,7 @@ st.markdown(html_temp,unsafe_allow_html=True)
 
 def center_image(image_path):
     st.markdown(
-        f'<div style="display: flex; justify-content: center;"><img src="{image_path}" width="400"/></div>',
+        f'<div style="display: flex; justify-content: center;"><img src="{image_path}" width="200"/></div>',
         unsafe_allow_html=True
     )
 
