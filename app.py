@@ -28,7 +28,7 @@ vectorizer = load(open('TfidfVectorizer.pkl', 'rb'))
 
 html_temp="""
 <div style ="background-color:grey;padding:10px">
-<h2 style="color:white;text-align:center;"> <b>Condition and Drug Name Prediction </b></h2>
+<h2 style="color:white;text-align:center;"><b>Condition and Drug Name Prediction </b></h2>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
 
