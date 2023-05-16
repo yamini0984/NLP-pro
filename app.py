@@ -26,14 +26,26 @@ st.set_page_config(
 model = load(open('model.pkl', 'rb'))
 vectorizer = load(open('TfidfVectorizer.pkl', 'rb'))
 
-image = Image.open("medication-review.jpg")
-st.image(image)
-
 html_temp="""
-<div style ="background-color:Black;padding:10px">
+<div style ="background-color:grey;padding:10px">
 <h2 style="color:white;text-align:center;"> Condition and Drug Name Prediction </h2>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
+
+def center_image(image_path):
+    st.markdown(
+        f'<div style="display: flex; justify-content: center;"><img src="{image_path}" width="400"/></div>',
+        unsafe_allow_html=True
+    )
+
+# Usage
+image = center_image('medication-review.jpg')
+#image = Image.open("medication-review.jpg")
+st.image(image)
+
+
+
+
 
 # Load the data
 df2 = pd.read_table('drugsCom_raw (1).tsv')
