@@ -28,23 +28,20 @@ vectorizer = load(open('TfidfVectorizer.pkl', 'rb'))
 
 html_temp="""
 <div style ="background-color:grey;padding:10px">
-<h2 style="color:white;text-align:center;"> Condition and Drug Name Prediction </h2>
+<h2 style="color:white;text-align:center;"> <b>Condition and Drug Name Prediction </b></h2>
 """
 st.markdown(html_temp,unsafe_allow_html=True)
 
 def center_image(image_path):
     st.markdown(
-        f'<div style="display: flex; justify-content: center;"><img src="{image_path}" width="200"/></div>',
+        f'<div style="display: flex; justify-content: center;"><img src="{image_path}" width="100; max-height: 100%;"/></div>',
         unsafe_allow_html=True
     )
-
+    
 # Usage
 center_image('medication-review.jpg')
 image = Image.open("medication-review.jpg")
 st.image(image)
-
-
-
 
 
 # Load the data
