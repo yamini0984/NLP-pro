@@ -39,8 +39,8 @@ def center_image(image_path):
     )
 
 # Usage
-image = center_image('medication-review.jpg')
-#image = Image.open("medication-review.jpg")
+center_image('medication-review.jpg')
+image = Image.open("medication-review.jpg")
 st.image(image)
 
 
