@@ -26,8 +26,8 @@ st.set_page_config(
 model = load(open('model.pkl', 'rb'))
 vectorizer = load(open('TfidfVectorizer.pkl', 'rb'))
 
-#image = Image.open("background.jpeg")
-#st.image(image)
+image = Image.open("medication-review.jpg")
+st.image(image)
 
 html_temp="""
 <div style ="background-color:Black;padding:10px">
