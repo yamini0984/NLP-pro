@@ -1,0 +1,6 @@
+pandas @ file:///C:/ci/pandas_1650373458095/work
+numpy @ file:///C:/ci/numpy_and_numpy_base_1652784039997/work
+numpydoc @ file:///opt/conda/conda-bld/numpydoc_1643788541039/work
+mkl-random @ file:///C:/ci/mkl_random_1626186184308/work
+Rtree @ file:///C:/ci/rtree_1618421015405/work
+nltk @ file:///opt/conda/conda-bld/nltk_1645628263994/work
